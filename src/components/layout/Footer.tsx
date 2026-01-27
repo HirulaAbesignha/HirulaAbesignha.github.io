@@ -3,8 +3,8 @@ import { Github, Linkedin, Twitter, Instagram, ArrowUpRight } from "lucide-react
 import { CustomButton } from "@/components/ui/custom-button";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/HirulaAbesignha", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/hirulaabesignha", label: "LinkedIn" },
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Instagram, href: "#", label: "Instagram" },
 ];
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="font-display text-3xl font-bold tracking-tight">
-              <span className="text-gradient">David</span>
+              <span className="text-gradient">Hirula</span>
               <span className="text-foreground">.</span>
             </Link>
             <p className="mt-4 max-w-md font-body text-muted-foreground">
@@ -71,11 +71,11 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold text-foreground">Get in Touch</h4>
             <ul className="mt-4 space-y-3 font-body text-muted-foreground">
-              <li>hello@david.design</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>hirulapinibinda01@gmail.com</li>
+              <li>+94 (76) 175 2211</li>
+              <li>Kandana, Sri Lanka</li>
             </ul>
-            <Link to="/contact" className="mt-6 inline-flex items-center gap-2 font-body text-primary transition-colors hover:text-primary/80">
+            <Link to="/contact" className="mt-4 inline-flex items-center gap-2 font-body text-primary transition-colors hover:text-primary/80">
               Start a Project <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
           <p className="font-body text-sm text-muted-foreground">
-            © {currentYear} David. All rights reserved.
+            © {currentYear} Hirula. All rights reserved.
           </p>
           <p className="font-body text-sm text-muted-foreground">
             Crafted with passion & precision

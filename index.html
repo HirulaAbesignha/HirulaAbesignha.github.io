@@ -1,24 +1,349 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Anderson | UI/UX Designer & Developer</title>
-    <meta name="description" content="I'm David Anderson, a passionate UI/UX Designer & Developer crafting beautiful digital experiences. View my portfolio and let's work together." />
-    <meta name="author" content="David Anderson" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hirula Abesignha - Portfolio | Developer & Designer">
+    <title>Hirula Abesignha</title>
+    <link rel="icon" href="assets/letter-h.ico" type="image/ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-text">Hirula</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="David Anderson | UI/UX Designer & Developer" />
-    <meta property="og:description" content="Passionate UI/UX Designer & Developer crafting beautiful digital experiences." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1 class="hero-name">Hirula <span class="text-gradient">Abesingha</span></h1>
+                <h2 class="hero-title">AI/ML Engineer & Software Developer</h2>
+                <p class="hero-description">
+                    I build intelligent, secure systems by combining machine learning, clean architecture, 
+                    and thoughtful design. Passionate about turning complex problems into real world solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Start a Project Now</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="assets/Hirula_CV.pdf" class="btn btn-secondary" download target="_blank">Download My CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero-profile.jpg" alt="Hirula Abesignha" class="profile-img">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-icon">💻</span>
+                    <span>3+ Years Experience</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">🚀</span>
+                    <span>10+ Projects</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@davidanderson" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-description">A collection of my recent work showcasing creativity and technical expertise.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="AI-Driven Zero-Trust Behavior Firewall (ZTBF)">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HirulaAbesignha/ztbf-ai-firewall" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Cybersecurity / AI-Driven Security</span>
+                        <h3 class="project-title">AI-Driven Zero-Trust Behavior Firewall (ZTBF)</h3>
+                        <p class="project-desc">Enterprise grade behavioral security that detects threats traditional firewalls miss, using AI and 
+                            continuous zero-trust monitoring.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Machine Learning</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Diabetic Retinopathy Detection System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HirulaAbesignha/DR-detection" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Deep Learning Medical Imaging</span>
+                        <h3 class="project-title">Diabetic Retinopathy Detection System</h3>
+                        <p class="project-desc">Deep learning system for automated detection and classification of 
+                            diabetic retinopathy severity from retinal fundus images</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Computer Vision</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project3.png" alt="Wilson's Algorithm Maze Generator">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HirulaAbesignha/wilsons-maze-generator" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Game Development</span>
+                        <h3 class="project-title">Wilson's Algorithm Maze Generator</h3>
+                        <p class="project-desc">Real time visualization of Wilson's Algorithm for generating perfect mazes with a single path between any two points.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>Procedural Generation</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project4.jpg" alt="Prompto">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HirulaAbesignha/prompto" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Developer Productivity</span>
+                        <h3 class="project-title">Prompto</h3>
+                        <p class="project-desc">A lightweight CLI providing instant access to commonly used development commands across Git, NPM, Docker, Python, and more.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>CLI</span>
+                            <span>NPM</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="assets/about-photo.jpg" alt="About Hirula">
+                        <div class="about-image-border"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">AI/ML Engineer & <span class="text-gradient">Software Developer</span></h2>
+                    <p class="about-description">
+                        I’m a software developer based in Sri Lanka with a strong interest in artificial intelligence, machine learning,
+                        and secure system design. I enjoy building intelligent and scalable applications that solve real world problems 
+                        through clean architecture and data driven thinking.
+                    </p>
+                    <p class="about-description">
+                        My work blends solid software engineering with modern AI techniques, from training and evaluating models to 
+                        integrating them into real applications and APIs. I care deeply about writing clean, maintainable code, designing 
+                        intuitive systems, and continuously learning to turn complex ideas into practical, impactful solutions.
+                    </p>
+                    <div class="skills-section">
+                        <h3 class="skills-title">My Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🤖</div>
+                                <span>AI / Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🧠</div>
+                                <span>Deep Learning & Neural Networks</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔐</div>
+                                <span>Cybersecurity & Secure Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">💻</div>
+                                <span>Software Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🛡️</div>
+                                <span>Web & Application Security</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚙️</div>
+                                <span>Backend & System Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-section">
+                        <h3 class="skills-title">Education</h3>
+                        <div class="education-item">
+                            <div class="edu-icon">🎓</div>
+                            <div>
+                                <h4>BSc (Hons) in Information Technology</h4>
+                                <p>Sri Lanka Institute of Information Technology (SLIIT) • 2024 - present</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
+                    <p class="contact-description">
+                        Have a project in mind? Let's create something amazing together. 
+                        Feel free to reach out through any of these channels.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hirulapinibinda01@gmail.com">hirulapinibinda01@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kandana, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div>
+                                <h4>Open for</h4>
+                                <p>Internships & entry-level roles in AI, Software & Cybersecurity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/HirulaAbesignha" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/hirulaabesignha" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/HirulaAbesingha" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Hirula</span>
+                    </a>
+                    <p>Building intelligent and secure digital experiences that make an impact.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#">AI & Machine Learning</a>
+                        <a href="#">Secure Software Development</a>
+                        <a href="#">Full-Stack Web Development</a>
+                        <a href="#">ntelligent Systems & APIs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hirula Abesingha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
